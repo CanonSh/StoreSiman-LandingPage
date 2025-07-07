@@ -3,6 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+.wrapper .header {
+    background-color: rgba(222, 30, 27);
+}
+.wrapper .header .dropdown-menu {
+    background-color: rgba(222, 30, 27);
+}
+
+.wrapper .header a{
+    color: white;
+}
+.wrapper .header a:hover {
+    color: rgb(0, 0, 0);
+}
 
 .wrapper .contenido-principal {
     align-items: center;
@@ -89,3 +102,15 @@
     margin-bottom: 0;
 }
 
+.wrapper .footer {
+    background-color: rgb(168, 50, 56);
+    color: white;
+    padding: 1rem;
+}
+.wrapper .footer .container .row a {
+    color: white;
+}
+
+.wrapper .footer .container .row a:hover {
+    color: rgb(0, 0, 0);
+}
