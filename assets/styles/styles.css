@@ -1,0 +1,78 @@
+.wrapper .contenido-principal {
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(168, 50, 56);
+    height: 65vh;
+    color: white;
+    text-align: center;
+}
+
+.wrapper .contenido-principal .mensaje {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    align-items: center;
+    color: black;
+}
+.wrapper .contenido-principal .mensaje img {
+    width: 50vw;
+    height: 50vh;
+    object-fit: cover;
+    
+}
+.wrapper .productos-populares {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(168, 50, 56);
+    color: white;
+}
+.wrapper .productos-populares .productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    background-color: rgba(222, 30, 27);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+.wrapper .productos-populares .productos .producto {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.wrapper .productos-populares .productos .producto .imagen-contenedor {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 0 auto;
+}
+
+.wrapper .productos-populares .productos .producto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.wrapper .productos-populares .productos .producto:hover {
+    transform: scale(1.05);
+}
+.wrapper .productos-populares .productos .producto .producto-info {
+  min-height: 3.5rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  color: black;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+.wrapper .productos-populares .productos .producto .producto-info h3 {
+    margin-bottom: 0;
+}
+
