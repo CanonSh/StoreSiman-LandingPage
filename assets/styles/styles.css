@@ -1,17 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .wrapper .contenido-principal {
-    margin-top: 2rem;
     align-items: center;
     justify-content: center;
     background-color: rgb(168, 50, 56);
-    height: 65vh;
     color: white;
     text-align: center;
+}
+.wrapper .contenido-principal h1 {
+    padding-top: 0.5rem;
+    font-size: 3rem;
 }
 
 .wrapper .contenido-principal .mensaje {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     align-items: center;
     color: black;
 }
@@ -21,15 +29,20 @@
     object-fit: cover;
     
 }
-.wrapper .productos-populares {
-    margin-top: 8rem;
+.wrapper .productos-populares{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgb(168, 50, 56);
+}
+.wrapper .productos-populares h2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 3rem;
     color: white;
 }
+
 .wrapper .productos-populares .productos{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
