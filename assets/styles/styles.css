@@ -114,3 +114,73 @@
 .wrapper .footer .container .row a:hover {
     color: rgb(0, 0, 0);
 }
+
+.wrapper .seccion-ofertas {
+    background-color: rgb(168, 50, 56);
+}
+
+.wrapper .seccion-ofertas h2 {
+    text-align: center;
+    padding-top: 0.5rem;
+    font-size: 3rem;
+    color: white;
+}
+
+.wrapper .seccion-ofertas .seccion-info {
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.wrapper .seccion-ofertas .contenedor-ofertas {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(190, 26, 23);
+}
+
+
+.wrapper .seccion-ofertas .oferta {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+.wrapper .seccion-ofertas .oferta img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.wrapper .seccion-ofertas .oferta-info {
+    padding: 1rem;
+    color: black;
+    text-align: center;
+}
+
+/*para que sea responsive en celular, solo para no usar un grid y usar el flexbox en su lugar*/
+@media (max-width: 768px) {
+    .wrapper .seccion-ofertas .oferta {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .wrapper .seccion-ofertas .oferta img {
+        width: 100%;
+        max-width: none;
+    }
+}
