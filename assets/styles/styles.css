@@ -195,3 +195,49 @@
 
 
 }
+
+/*////pagina ofertas/////*/
+.wrapper .Ofertas .descripcion-oferta {
+  background-color: rgb(168, 50, 56);
+  margin-bottom: auto;
+  color: white;
+  text-align: center;
+}
+.wrapper .Ofertas h2 {
+  font-size: 3rem;
+  padding-top: 1rem;
+
+}
+.wrapper .Ofertas p {
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+  padding-bottom: 1rem;
+}
+.wrapper .Ofertas .oferta-diapositiva {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.wrapper .Ofertas .oferta-diapositiva .carousel-inner img{
+  max-width: 400px;   
+  width: 100%;        
+  height: auto;      
+  margin: 0 auto;     
+  display: block;  
+}
+.wrapper .Ofertas .oferta-diapositiva .carousel-inner{
+  color: black;
+  text-align: center;
+  padding-right: 4rem;
+    padding-left: 4rem;
+  align-items: center;
+}
+
+.wrapper .Ofertas .oferta-diapositiva .carousel-control-prev-icon,
+.wrapper .Ofertas .oferta-diapositiva .carousel-control-next-icon {
+  filter: invert(1); 
+}
+.wrapper .Ofertas .oferta-diapositiva .carousel-inner h5 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
