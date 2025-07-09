@@ -1,17 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper .header {
+    background-color: rgba(222, 30, 27);
+}
+.wrapper .header .dropdown-menu {
+    background-color: rgba(222, 30, 27);
+}
+
+.wrapper .header a{
+    color: white;
+}
+.wrapper .header a:hover {
+    color: rgb(0, 0, 0);
+}
+
 .wrapper .contenido-principal {
-    margin-top: 2rem;
     align-items: center;
     justify-content: center;
     background-color: rgb(168, 50, 56);
-    height: 65vh;
     color: white;
     text-align: center;
+}
+.wrapper .contenido-principal h1 {
+    padding-top: 0.5rem;
+    font-size: 3rem;
 }
 
 .wrapper .contenido-principal .mensaje {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     align-items: center;
     color: black;
 }
@@ -21,15 +42,20 @@
     object-fit: cover;
     
 }
-.wrapper .productos-populares {
-    margin-top: 8rem;
+.wrapper .productos-populares{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgb(168, 50, 56);
+}
+.wrapper .productos-populares h2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 3rem;
     color: white;
 }
+
 .wrapper .productos-populares .productos{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -76,3 +102,96 @@
     margin-bottom: 0;
 }
 
+.wrapper .footer {
+    background-color: rgb(168, 50, 56);
+    color: white;
+    padding: 1rem;
+}
+.wrapper .footer .container .row a {
+    color: white;
+}
+
+.wrapper .footer .container .row a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.wrapper .seccion-ofertas {
+    background-color: rgb(168, 50, 56);
+}
+
+.wrapper .seccion-ofertas h2 {
+    text-align: center;
+    padding-top: 0.5rem;
+    font-size: 3rem;
+    color: white;
+}
+
+.wrapper .seccion-ofertas .seccion-info {
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.wrapper .seccion-ofertas .contenedor-ofertas {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(190, 26, 23);
+}
+
+
+.wrapper .seccion-ofertas .oferta {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+.wrapper .seccion-ofertas .oferta img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.wrapper .seccion-ofertas .oferta-info {
+    padding: 1rem;
+    color: black;
+    text-align: center;
+}
+
+/*para que sea responsive en celular, solo para no usar un grid y usar el flexbox en su lugar*/
+@media (max-width: 768px) {
+    .wrapper .contenido-principal .mensaje {
+        grid-template-columns: 1fr; 
+        text-align: center;          
+    }
+
+    .wrapper .contenido-principal .mensaje img {
+        width: 100%;      
+        height: auto;    
+    }
+    .wrapper .seccion-ofertas .oferta {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .wrapper .seccion-ofertas .oferta img {
+        width: 100%;
+        max-width: none;
+    }
+
+
+}
